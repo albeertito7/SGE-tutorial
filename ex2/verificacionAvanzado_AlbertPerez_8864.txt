@@ -1,0 +1,40 @@
+job_number:                 unassigned
+owner:                      
+uid:                        0
+group:                      
+gid:                        0
+sge_o_home:                 /home/apd7
+sge_o_log_name:             apd7
+sge_o_path:                 /opt/mpich3/gnu/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ganglia/bin:/opt/ganglia/sbin:/opt/pdsh/bin:/opt/rocks/bin:/opt/rocks/sbin:/opt/gridengine/bin/lx-amd64:/home/apd7/.local/bin:/home/apd7/bin
+sge_o_shell:                /bin/bash
+sge_o_workdir:              /home/apd7
+sge_o_host:                 moore
+cwd:                        /home/apd7
+path_aliases:               /tmp_mnt/ * * /,/private/var/automount/ * * /
+merge:                      y
+hard resource_list:         h_vmem=256M
+mail_options:               abe
+mail_list:                  apd7@alumnes.udl.cat
+notify:                     FALSE
+job_name:                   Avanzado_AlbertPerez
+stdout_path_list:           NONE:NONE:Avanzado_AlbertPerez.txt
+jobshare:                   0
+hard_queue_list:            all.q
+verify:                     -verify
+env_list:                   TERM
+script_size:                159
+script_file:                avanzado.sh
+script_ptr:            
+#!/bin/sh
+#
+#$ -N Avanzado_AlbertPerez
+#$ -cwd
+#$ -j y
+#$ -o Avanzado_AlbertPerez.txt
+#$ -q all.q
+#$ -l h_vmem=256M
+#$ -M apd7@alumnes.udl.cat
+#$ -m bea
+
+ls -R
+job_type:                   NONE
